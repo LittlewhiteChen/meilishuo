@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors kay chen (you@example.org)
+ * @date    2014-12-09 20:03:17
+ * @version $Id$
+ */
+ 	/*重置*/
+	body,ul,li,p,h3,h4{
+		margin: 0;
+		padding: 0;
+	}
+	body{color: #666;font-size: 12px;font-family: Arial;}
+	img{border:none;}
+	li{list-style: none;}
+	a{color: #666;font:12px Arial;}
+	a:link{}
+	a:hover{color: #F69;}
+
+	/*顶部*/
+	#top{
+		height: 40px;
+		background: #F5F5F5;
+		text-align: right;
+	}
+
+	/*头部导航区*/
+	#header{
+		position: relative;
+		height: 141px;
+		/*border: 1px solid #000*/
+	}
+
+	/*广告条区域*/
+	.navbanner{
+		overflow: hidden;
+		height: 70px;
+		/*border: 1px solid #999;*/
+		margin-bottom: 5px;
+		background: #E0403E;
+		text-align: right;
+	}
+	
+	/*logo区域*/
+	#logo{
+		position: relative;
+		width: 1200px;
+		height: 36px;
+		padding: 15px 6px;
+		margin: 0 auto;
+	}
+	#logo a{
+		display: block;
+		width: 106px;
+		height: 36px;
+	}
+
+	/*主导航条*/
+	#navbar{
+		height: 40px;
+		background: #FF6599;
+	}
+	#navbar ul {
+		width: 948px;
+		margin: 0 auto;
+	}
+	#navbar ul li{
+		float: left;
+		text-align: center;
+
+	}
+	#navbar ul li a{
+		display: block;
+		height: 40px;
+		padding:0 14px;
+		font:500 15px/40px "微软雅黑";
+		color: #FFF;
+		text-decoration: none;
+	}
+	.white_arrow {
+		background: url("../images/mls_global140607.png") no-repeat -61px -70px;
+		_background-position: -61px -82px;
+		display: inline-block;
+		width: 10px;
+		height: 6px;
+		overflow: hidden;
+	}
+	.clothestab,.loveclubtab{
+		position: absolute;
+		display: none;
+		overflow: hidden;
+		width: 70px;
+		border: 1px solid #ED3577;
+		border-top:none;
+	}
+	#navbar ul li:hover .clothestab {display: block;}
+	#navbar ul li:hover .loveclubtab {display: block;}
+	.loveclubtab{width: 119px;}
+	#navbar ul li .clothestab a,#navbar ul li .loveclubtab a {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		padding: 0;
+		background: #FFF;
+		color: #ED3577;
+		font-weight: bold;
+	}
+	#navbar ul li .clothestab a:hover,#navbar ul li .loveclubtab a:hover{
+		background: #ED3577;
+		color: #FFF
+	}
+	#navbar ul li a:hover,.navindex{background: #ED3577}
+
+
+	/*导航盒的制作*/
+	.navbox{
+		position: absolute;
+		left: 75px;
+		width: 240px;
+		height: 574px;
+		border: 1px solid #E6E6E6;
+	}
+	.navbox .list{
+		position: relative;
+		width: 198px;
+		height: 114px;
+		border-bottom: 1px dotted #CCC;
+		margin: 0px 20px;
+	}
+	.navbox .list .list_cont{
+		position: relative;
+		z-index: 7;
+		widows: 198px;
+		height: 96px;
+		padding: 12px 0px 6px;
+	}
+	.navbox .list .list_cont h3{
+		height: 18px;
+		line-height: 18px
+
+
+	}
+	.navbox .list .list_cont h3 a {
+		width: 56px;
+		margin-right: 10px;
+		text-decoration: none;
+		color: #F69;
+		font: 600 16px/18px Arial;
+	}
+
+
+	.navbox .list .list_cont h3 a img {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		vertical-align: top;
+		padding-right: 5px;
+	}
+
+	.navbox .list .list_cont p {
+		overflow: hidden;
+		width: 190px;
+		height: 72px;
+		line-height: 24px;
+		white-space: nowrap;
+		margin-top: 6px;
+		padding-top: 5px
+	}
+	.navbox .list .list_cont p a{
+		height: 24px;
+		float: left;
+		margin-right: 14px;
+		color: #666;
+		text-decoration: none;
+	}
+	.navbox .list .list_cont p .red_f{color:#F69 }
+	.navbox .list .list_cont p a:hover{
+		color: #F69
+	}
+	.navbox .list .list_cont .corner{
+		font-size: 14px;
+		color: #999;
+		position: absolute;
+		right: -5px;
+		top: 48px;
+		cursor:pointer;
+	}
+	.navbox .list .list_cont:hover .corner{
+		color: #F69
+	}
+	/*悬浮层*/
+	.navbox .list .nav_list{
+		display: none;
+		border: 1px solid #e6e6e6;
+		background: #fff;
+		padding-left: 20px;
+		width: 330px;
+		z-index: 6;
+		padding-bottom: 10px;
+		position: absolute;
+		top: -1px;
+		right: -352px;
+	}
+	.navbox .list .nav_list li h4{
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		padding-top: 12px;
+		font-weight: bold
+	}
+	.navbox .list .nav_list li h4 a{
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		color: #666;
+		text-decoration: none;
+		font-weight: bold
+	}
+	.navbox .list .nav_list li p {
+		line-height: 24px;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 100%;
+	}
+	.navbox .list .nav_list li p a {
+		float: left;
+		margin-right: 14px;
+		color: #666;
+		line-height: 24px;
+		text-decoration: none;
+	}
+	.navbox .list .nav_list li p a:hover,
+	.navbox .list .nav_list li h4 a:hover {color:#F69}
+
